@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
@@ -9,6 +10,7 @@ using TailSpin.SpaceGame.Web.Models;
 
 namespace Tests
 {
+    [ExcludeFromCodeCoverage]
     public class DocumentDBRepository_GetItemsAsyncShould
     {
         private IDocumentDBRepository<Score> _scoreRepository;
